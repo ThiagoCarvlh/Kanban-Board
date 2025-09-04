@@ -14,9 +14,12 @@ O projeto utiliza **LocalStorage** para salvar as tarefas e está hospedado no *
 ---
 
 ## 📂 Estrutura do Projeto
-Sistema-Kabam/
+
+```
+kanban-simple/
 ├── index.html
 ├── style.css
 ├── script.js
 ├── vercel.json
 └── README.md
+```
