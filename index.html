@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kanban Board</h1>
+      <button id="addTask">+ Adicionar Tarefa</button>
+    </header>
+
+    <main class="board">
+      <div class="column">
+        <h2>Pendência</h2>
+        <div class="tasks" id="todo"></div>
+      </div>
+      <div class="column">
+        <h2>Fazendo</h2>
+        <div class="tasks" id="doing"></div>
+      </div>
+      <div class="column">
+        <h2>Feito</h2>
+        <div class="tasks" id="done"></div>
+      </div>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Nova Tarefa</h3>
+        <input type="text" id="taskTitle" placeholder="Título da tarefa" />
+        <textarea id="taskDesc" placeholder="Descrição"></textarea>
+        <select id="taskPriority">
+          <option value="low">Baixa</option>
+          <option value="medium" selected>Média</option>
+          <option value="high">Alta</option>
+        </select>
+        <div class="modal-buttons">
+          <button id="saveTask">Salvar</button>
+          <button id="cancelTask">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
